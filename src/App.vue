@@ -2,7 +2,7 @@
   <div class="todoapp">
     <div class="general">
       <div class="todo__list">to do list</div>
-      <div class="post" id="post" v-bind="post in postss">
+      <div class="post" id="post" v-for="post in postss" v-bind:key="post.id">
         <div class="checkbox__task">
           <input class="checkbox__input" type="checkbox" />
           <label class="checkbox__label" for="checkbox__one">
