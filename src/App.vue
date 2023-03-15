@@ -5,8 +5,8 @@
       <div class="post" id="post" v-for="post in postss" v-bind:key="post.id">
         <div class="checkbox__task">
           <div class="task">
-            <input class="checkbox__input" type="checkbox" id="checkbox" />
-            <label class="checkbox__label" for="checkbox">
+            <input class="checkbox__input" type="checkbox" :id="post.id" />
+            <label class="checkbox__label" :for="post.id">
               {{ post.title }} {{ post.number }}
             </label>
           </div>
@@ -58,8 +58,9 @@ body {
 }
 .todoapp {
   position: absolute;
-  top: 99px;
-  left: 319px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .general {
   max-width: 540px;
@@ -86,7 +87,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  padding: 0 0;
+  justify-content: space-between;
 }
 .task {
   position: relative;
@@ -100,12 +101,13 @@ body {
 .checkbox__label {
   padding-left: 40px;
   font-size: 20px;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   color: #7f4b13;
   cursor: pointer;
+  user-select: none;
+}
+label.checkbox__label {
+  font-family: "Inter";
+  font-weight: 400;
 }
 .checkbox__label:before {
   content: "";
@@ -148,7 +150,7 @@ body {
   border: 1.5px solid #ffca93;
   border-radius: 2px;
   margin-top: 13px;
-  margin-left: 300px;
+  margin-right: 20px;
 }
 .cross span {
   position: absolute;
@@ -194,8 +196,7 @@ body {
 .btn p {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
   color: #ffca93;
 }
 .todo__info {
