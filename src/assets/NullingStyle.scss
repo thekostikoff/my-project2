@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  max-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(104.11deg, #ff7e5f 14.52%, #feb567 87.26%);
+ }
+.todoapp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff4e9;
+}
