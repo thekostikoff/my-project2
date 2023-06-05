@@ -1,7 +1,7 @@
 <template>
   <div class="todoapp">
-    <PostsList />
     <GeneralPanel />
+    <PostsList />
     <AddNewTask />
     <GeneralButtons />
   </div>
