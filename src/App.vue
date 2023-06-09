@@ -1,5 +1,5 @@
 <template>
-  <div class="todoapp">
+  <div :class="$style.todoapp">
     <GeneralPanel />
     <PostsList />
     <AddNewTask />
@@ -26,4 +26,12 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" module>
+.todoapp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff4e9;
+}
+</style>
