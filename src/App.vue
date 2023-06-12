@@ -3,20 +3,20 @@
     <GeneralPanel />
     <PostsList />
     <AddNewTask />
-    <GeneralButtons />
+    <FooterEnd />
   </div>
 </template>
 
 <script>
 import AddNewTask from "@/components/AddNewTask.vue";
 import PostsList from "@/components/PostsList.vue";
-import GeneralButtons from "@/components/GeneralButtons.vue";
+import FooterEnd from "@/components/FooterEnd.vue";
 import GeneralPanel from "@/components/GeneralPanel.vue";
 export default {
   components: {
     PostsList,
     AddNewTask,
-    GeneralButtons,
+    FooterEnd,
     GeneralPanel,
   },
   data() {

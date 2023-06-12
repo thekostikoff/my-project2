@@ -88,7 +88,7 @@ label.checkbox__label {
   display: block;
   width: 24px;
   height: 24px;
-  background: url("../components/V.svg") no-repeat;
+  background: url("/public/img/V.svg") no-repeat;
   background-size: 13.71px 9.43px;
   opacity: 0;
   position: absolute;

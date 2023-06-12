@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.todo__info">
+  <div :class="$style.buttons">
     <div :class="$style.oneofthird">1/3 left</div>
     <div :class="$style.task__info">
       <ButtonsInfo />
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" module>
-.todo__info {
+.buttons {
   display: flex;
   flex-direction: row;
   align-items: self-start;
