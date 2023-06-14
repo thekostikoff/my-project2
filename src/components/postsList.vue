@@ -6,14 +6,10 @@
       v-for="post in postss"
       v-bind:key="post.id"
     >
-      <div :class="$style.checkbox__task">
+      <div :class="$style.checkbox">
         <div :class="$style.task">
-          <input
-            :class="$style.checkbox__input"
-            type="checkbox"
-            :id="post.id"
-          />
-          <label :class="$style.checkbox__label" :for="post.id">
+          <input :class="$style.input" type="checkbox" :id="post.id" />
+          <label :class="$style.label" :for="post.id">
             {{ post.title }} {{ post.number }}
           </label>
         </div>
@@ -41,7 +37,7 @@ export default {
 .post {
   background: #fff4e9;
   padding: 20px 0px 0px 30px;
-  .checkbox__task {
+  .checkbox {
     max-width: 480px;
     background: #ffdfbe;
     border-radius: 10px;
@@ -54,23 +50,23 @@ export default {
   position: relative;
   margin: 13px 15px;
 }
-.checkbox__input {
+.input {
   -webkit-appearance: none;
   appearance: none;
   position: absolute;
 }
-.checkbox__label {
+.label {
   padding-left: 40px;
   font-size: 20px;
   color: #7f4b13;
   cursor: pointer;
   user-select: none;
 }
-label.checkbox__label {
+label.label {
   font-family: "Inter";
   font-weight: 400;
 }
-.checkbox__label:before {
+.label:before {
   content: "";
   display: block;
   width: 24px;
@@ -83,7 +79,7 @@ label.checkbox__label {
   left: 0;
   z-index: 1;
 }
-.checkbox__label:after {
+.label:after {
   content: "";
   display: block;
   width: 24px;
@@ -96,11 +92,11 @@ label.checkbox__label {
   left: 6px;
   z-index: 2;
 }
-.checkbox__input:checked + .checkbox__label:before {
+.input:checked + .label:before {
   background: #feb567;
   border-radius: 5px;
 }
-.checkbox__input:checked + .checkbox__label:after {
+.input:checked + .label:after {
   opacity: 1;
 }
 .cross {

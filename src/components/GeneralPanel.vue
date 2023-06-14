@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.general">
-    <div :class="$style.todo__list">to do list</div>
+    <div :class="$style.list">to do list</div>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
   border: 1px solid #ffca93;
   position: relative;
   z-index: 2;
-  .todo__list {
+  .list {
     background: #ffca93;
     font-family: "Open Sans";
     font-weight: 600;

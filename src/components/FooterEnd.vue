@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.buttons">
     <div :class="$style.oneofthird">1/3 left</div>
-    <div :class="$style.task__info">
+    <div :class="$style.info">
       <ButtonsInfo />
     </div>
   </div>
@@ -41,11 +41,11 @@ export default {
     padding-left: 10px;
     min-width: 100px;
   }
-  .task__info {
+  .info {
     display: flex;
     flex-direction: row;
   }
-  .task__info button:hover {
+  .info button:hover {
     border: 1px solid #c9955d;
     border-radius: 10px;
     cursor: pointer;
