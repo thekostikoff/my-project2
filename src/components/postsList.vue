@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import newPost from "@/components/AddNewTask.vue";
 export default {
   data() {
     return {
