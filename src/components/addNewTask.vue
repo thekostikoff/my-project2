@@ -1,10 +1,26 @@
 <template>
-  <button :class="$style.btn">
+  <button :class="$style.btn" @click="createPost">
     <p>Add a new task</p>
   </button>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    addNewTask() {
+      const newPost = {
+        id: Date.now(),
+        title: "Task",
+        number: 4,
+      };
+      this.postss.push(newPost);
+    },
+  },
+};
+</script>
 
 <style lang="scss" module>
 .btn {
